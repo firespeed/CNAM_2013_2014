@@ -1,0 +1,111 @@
+<html>
+<HEAD>
+<TITLE>ASTÉRIX - Le Site non officiel</TITLE>
+	<META NAME="Description" 
+	CONTENT="Le village J2EE d'Astérix et Obélix">
+	<link rel="stylesheet" type="text/css" href="styles/accueil.css">
+	<link rel="stylesheet" type="text/css" href="styles/style.css">
+</HEAD>
+
+<body>
+<!--#start corps -->
+<div id="corps"> 
+	<!--#start corps2 -->
+	<div id="corps2"> 
+	
+		<div id="frise" >
+			<img src="images/bandeau.png" width="611" height="182" border="0" hspace="0" vspace="0">
+		</div>
+		
+		<div id="cadre">
+		
+			<div id="tetiere" style="background-image:url('images/buisson.png');background-position:bottom left;background-repeat:no-repeat;">
+			
+			<div id="tetiere2">
+				<a href="index.jsp" title="Astérix - Le site non officiel">
+					<img id="logoblanc" src="images/logoasterix2fr.png">
+				</a>
+				<a href="index.html" title="Astérix - Le site officiel">
+					<img id="logoast" src="images/logoasterixfr.png" style="margin-top: 4px;" border="0" height="80" hspace="5" vspace="0" width="218">
+				</a>
+					<br>
+					<img id="titrerub" src="images/villagefr.png" border="0" height="30" hspace="5" vspace="0">
+					<br>
+					<br>
+			
+				<div id="search">Le dénicheur
+					<form action="Recherche" method="get" style="padding:0px;margin:0px;">
+					  <input type="hidden" name="p" value="1">
+					  <input type="hidden" name="lang" value="fr">
+					  <input type="hidden" name="include" value="">
+					  <input type="hidden" name="exclude" value="">
+					  <input type="hidden" name="penalty" value="0">
+					  <input type="hidden" name="mode" value="all">
+					  <input type="text" name="q" class="inp"  value="" style="background-image: url(images/icon_search.png); background-position: left center; background-repeat: no-repeat; padding-left: 18px;">&nbsp;<input class="inp3" value="Chercher" type="submit">
+					</form>
+				</div>
+			</div>
+
+		</div>
+		<!-- Menu -->
+		<div id="spacer" style="z-index:100;">
+
+			<div class="bouton1" id="blesvillageois">
+				<a href="lesVillageois" 
+				title="Les villageois" 
+				onmouseover="moff3();cloff();mon(1);" 
+				onmouseout="moff(1);" >
+				Les Villageois
+				</a>
+			</div>
+			
+			<div class="bouton2" id="blesspecialites">
+				<a href="lesSpecialites" 
+				title="Les specialités" 
+				onmouseover="moff3();cloff();mon(3);" 
+				onmouseout="moff(3);">
+				Les spécialités
+			</a>
+			</div>
+
+			<div class="bouton3" id="blespotions">
+				<a href="lesPotions" 
+				title="Les potions" 
+				onmouseover="moff3();cloff();mon(6);" 
+				onmouseout="moff(6);">
+				Les potions
+				</a>
+			</div>
+			
+			<div class="bouton4" id="bbatailles">
+				<a href="lesBatailles" 
+				title="Les batailles" 
+				onmouseover="moff3();cloff();mon(2);" 
+				onmouseout="moff(2);">
+				Les batailles
+				</a>
+			</div>
+			
+			<div class="bouton5" id="bcasques">
+				<a href="lesCasques" 
+				title="Les casques" 
+				onmouseover="moff3();cloff();mon(7);" 
+				onmouseout="moff(7);">
+				Les casques
+				</a>
+			</div>
+			
+			<div class="bouton6" id="blieux">
+				<a href="lesLieux" 
+				title="Les lieux" 
+				onmouseover="moff3();cloff();mon(4);" 
+				onmouseout="moff(4);">
+				Les lieux
+				</a>
+			</div>
+		</div>
+	<!-- Fin menu -->
+
+		<!--#start content -->
+		<div id="content">
+			<table border=0 cellpadding=0 cellspacing=0 width=100% height=480>

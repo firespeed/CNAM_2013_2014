@@ -1,0 +1,81 @@
+td{
+	vertical-align:top;
+}
+.titreListe {
+	border:1px solid red;
+	width:100%;
+	font-family : Comic Sans MS, Arial, Times New Roman, serif;
+	font-size:20px;
+	text-align:center;
+	font-weight:bold;
+	color:red;
+}
+.unGaulois {
+	border:2px outset red;
+	width:100%;
+	font-family : Comic Sans MS, Arial, Times New Roman, serif;
+	font-size:16px;
+	text-align:center;
+	color:red;
+	vertical-align:center;
+	background-color:#fff295;
+	font-weight:normal;
+	width:350px;
+	margin-left:auto;
+	margin-right:auto;
+}
+.uneSpecialite {
+	width:100%;
+	font-family : Comic Sans MS, Arial, Times New Roman, serif;
+	font-size:16px;
+	text-align:left;
+	color:red;
+	font-weight:normal;
+	width:350px;
+	margin-left:auto;
+	margin-right:auto;
+}
+.unePotion {
+	width:100%;
+	font-family : Comic Sans MS, Arial, Times New Roman, serif;
+	font-size:16px;
+	text-align:left;
+	color:green;
+	font-weight:normal;
+	width:350px;
+	margin-left:auto;
+	margin-right:auto;
+}
+.uneBataille {
+	width:100%;
+	font-family : Comic Sans MS, Arial, Times New Roman, serif;
+	font-size:16px;
+	text-align:left;
+	color:blue;
+	font-weight:normal;
+	width:350px;
+	margin-left:auto;
+	margin-right:auto;
+}
+.unCasque {
+	width:100%;
+	font-family : Comic Sans MS, Arial, Times New Roman, serif;
+	font-size:16px;
+	text-align:left;
+	color:black;
+	font-weight:normal;
+	width:350px;
+	margin-left:auto;
+	margin-right:auto;
+}
+.unLieu {
+	width:100%;
+	font-family : Comic Sans MS, Arial, Times New Roman, serif;
+	font-size:16px;
+	text-align:left;
+	color:gray;
+	font-weight:normal;
+	width:350px;
+	margin-left:auto;
+	margin-right:auto;
+}

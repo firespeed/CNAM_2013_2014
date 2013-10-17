@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app id="WebApp_ID" version="3.0"
+	xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+	<display-name>j2eeExo03LesGaulois</display-name>
+	<welcome-file-list>
+		<welcome-file>index.jsp</welcome-file>
+		<welcome-file>/vues/index.jsp</welcome-file>
+	</welcome-file-list>
+	<jsp-config>
+		<taglib>
+			<taglib-uri>/WEB-INF/tld/c.tld</taglib-uri>
+			<taglib-location>/WEB-INF/tld/c.tld</taglib-location>
+		</taglib>
+		<taglib>
+			<taglib-uri>/WEB-INF/tld/x.tld</taglib-uri>
+			<taglib-location>/WEB-INF/tld/x.tld</taglib-location>
+		</taglib>
+		<taglib>
+			<taglib-uri>/WEB-INF/tld/sql.tld</taglib-uri>
+			<taglib-location>/WEB-INF/tld/sql.tld</taglib-location>
+		</taglib>
+	</jsp-config>
+
+	<servlet>
+		<servlet-name>villageois</servlet-name>
+		<jsp-file>/vues/lesVillageois.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>villageois</servlet-name>
+		<url-pattern>/lesVillageois</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>batailles</servlet-name>
+		<jsp-file>/vues/lesBatailles.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>batailles</servlet-name>
+		<url-pattern>/lesBatailles</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>specialites</servlet-name>
+		<jsp-file>/vues/lesSpecialites.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>specialites</servlet-name>
+		<url-pattern>/lesSpecialites</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>potions</servlet-name>
+		<jsp-file>/vues/lesPotions.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>potions</servlet-name>
+		<url-pattern>/lesPotions</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>lieux</servlet-name>
+		<jsp-file>/vues/lesLieux.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>lieux</servlet-name>
+		<url-pattern>/lesLieux</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>casques</servlet-name>
+		<jsp-file>/vues/lesCasques.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>casques</servlet-name>
+		<url-pattern>/lesCasques</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>req_params</servlet-name>
+		<jsp-file>/vues/req_params.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>req_params</servlet-name>
+		<url-pattern>/req_params</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>RechGaulois</servlet-name>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>RechGaulois</servlet-name>
+		<url-pattern>/RechGaulois</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>Recherche</servlet-name>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Recherche</servlet-name>
+		<url-pattern>/Recherche</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>afficheGaulois</servlet-name>
+		<jsp-file>/vues/afficheGaulois.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>afficheGaulois</servlet-name>
+		<url-pattern>/afficheGaulois</url-pattern>
+	</servlet-mapping>
+	
+	
+</web-app>
