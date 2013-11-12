@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://localhost:8080/WebContractHelpdesk/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="WebContractHelpdesk" targetNamespace="http://localhost:8080/WebContractHelpdesk/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://localhost:8080/WebContractHelpdesk/">
+      <xsd:element name="NewQuestion">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="Question" type="tns:Question"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="NewQuestionResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="out" type="tns:QuestionID" minOccurs="1"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+    
+      <xsd:simpleType name="QuestionID">
+      	<xsd:restriction base="xsd:string">
+
+      		<xsd:length value="9"></xsd:length>
+      		<xsd:pattern value="\d+"></xsd:pattern>
+      	</xsd:restriction>
+      </xsd:simpleType>
+    
+      <xsd:simpleType name="Urgency">
+      	<xsd:restriction base="xsd:int">
+
+      		<xsd:minInclusive value="0"></xsd:minInclusive>
+
+      		<xsd:maxInclusive value="4"></xsd:maxInclusive>
+      	</xsd:restriction>
+      </xsd:simpleType>
+    
+      <xsd:complexType name="Question">
+      	<xsd:complexContent>
+      		<xsd:restriction base="xsd:anyType">
+      			<xsd:sequence>
+      				<xsd:element name="Numero"
+      					type="tns:QuestionID">
+      				</xsd:element>
+      				<xsd:element name="SubmitDate" type="xsd:date"
+      					maxOccurs="1" minOccurs="1">
+      				</xsd:element>
+      				<xsd:element name="Product">
+      					<xsd:simpleType>
+      						<xsd:restriction base="xsd:string">
+
+      							<xsd:length value="2"></xsd:length>
+      						</xsd:restriction>
+      					</xsd:simpleType>
+      				</xsd:element>
+      				<xsd:element name="Type">
+      					<xsd:simpleType>
+      						<xsd:restriction base="xsd:string">
+      							<xsd:enumeration value="BUGINPROD"></xsd:enumeration>
+      							<xsd:enumeration value="CONFIG"></xsd:enumeration>
+      							<xsd:enumeration value="USAGE"></xsd:enumeration>
+      							<xsd:enumeration value="BUGINDEV"></xsd:enumeration>
+      						</xsd:restriction>
+      					</xsd:simpleType>
+      				</xsd:element>
+      				<xsd:element name="Priority" type="tns:Urgency"
+      					minOccurs="1" maxOccurs="1">
+      				</xsd:element>
+      				<xsd:element name="Description" type="xsd:string"
+      					maxOccurs="1" minOccurs="1">
+      				</xsd:element>
+      				<xsd:element name="Title" minOccurs="1"
+      					maxOccurs="1">
+
+      					<xsd:simpleType>
+      						<xsd:restriction base="xsd:string">
+      							<xsd:minLength value="0"></xsd:minLength>
+      							<xsd:maxLength value="250"></xsd:maxLength>
+      						</xsd:restriction>
+      					</xsd:simpleType>
+      				</xsd:element>
+      			</xsd:sequence>
+      		</xsd:restriction>
+      	</xsd:complexContent>
+      </xsd:complexType>
+      <xsd:element name="getQuestionWithid">
+      	<xsd:complexType>
+      		<xsd:sequence>
+
+      			<xsd:element name="id" type="tns:QuestionID" minOccurs="1"></xsd:element>
+      		</xsd:sequence>
+      	</xsd:complexType>
+      </xsd:element>
+      <xsd:element name="getQuestionWithidResponse">
+      	<xsd:complexType>
+      		<xsd:sequence>
+
+      			<xsd:element name="question" type="tns:Question"></xsd:element>
+      		</xsd:sequence>
+      	</xsd:complexType>
+      </xsd:element>
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="NewQuestionRequest">
+    <wsdl:part element="tns:NewQuestion" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="NewQuestionResponse">
+    <wsdl:part element="tns:NewQuestionResponse" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="getQuestionWithidRequest">
+  	<wsdl:part name="parameters" element="tns:getQuestionWithid"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getQuestionWithidResponse">
+  	<wsdl:part name="parameters" element="tns:getQuestionWithidResponse"></wsdl:part>
+  </wsdl:message>
+  <wsdl:portType name="WebContractHelpdesk">
+    <wsdl:operation name="NewQuestion">
+      <wsdl:input message="tns:NewQuestionRequest"/>
+      <wsdl:output message="tns:NewQuestionResponse"/>
+    </wsdl:operation>
+    <wsdl:operation name="getQuestionWithid">
+    	<wsdl:input message="tns:getQuestionWithidRequest"></wsdl:input>
+    	<wsdl:output message="tns:getQuestionWithidResponse"></wsdl:output>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WebContractHelpdeskSOAP"
+  	type="tns:WebContractHelpdesk">
+  	<soap:binding style="document"
+  		transport="http://schemas.xmlsoap.org/soap/http" />
+  	<wsdl:operation name="NewQuestion">
+  		<soap:operation
+  			soapAction="http://localhost:8080/WebContractHelpdesk/NewQuestion" />
+  		<wsdl:input>
+  			<soap:body use="literal" />
+  		</wsdl:input>
+  		<wsdl:output>
+  			<soap:body use="literal" />
+  		</wsdl:output>
+  	</wsdl:operation>
+  	<wsdl:operation name="getQuestionWithid">
+  		<soap:operation
+  			soapAction="http://localhost:8080/WebContractHelpdesk/getQuestionWithid" />
+  		<wsdl:input>
+  			<soap:body use="literal" />
+  		</wsdl:input>
+  		<wsdl:output>
+  			<soap:body use="literal" />
+  		</wsdl:output>
+  	</wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="WebContractHelpdesk">
+    <wsdl:port binding="tns:WebContractHelpdeskSOAP" name="WebContractHelpdeskSOAP">
+      <soap:address location="http://localhost:8080"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
