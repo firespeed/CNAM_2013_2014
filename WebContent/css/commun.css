@@ -1,0 +1,120 @@
+body {
+	background: no-repeat center top  url(../js/vegas/images/film_fond5.jpg);
+	background-size:cover;
+	background-color: #000;
+}
+body {
+    color: rgb(0, 0, 0);
+    font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+    font-size: 12px;
+}
+.ligneAdmin:hover{
+	color: #c3c3c3;
+	background-color:#4c4c4e;
+}
+a img{
+	border:none;
+}
+.indexAlpha:hover{
+	background-color:#4c4c4e;
+    color:#c3c3c3;
+}
+.acteurs ul {
+	list-style-type:none;
+}
+.ariane:hover{
+    color: white;
+	background-color:#4c4c4e;
+}
+#blogvision{
+	background-color:lightGray;
+	border:none;
+	text-align:center;
+}
+.blocVideo{
+	float:left;
+	margin:auto;
+	width:40%;
+}
+.blocVideo2{
+	float:left;
+	margin:auto;
+	width:50%;
+}
+.ficheFilm{
+	background-color:white;
+}
+.floatLeft{
+	float:left;
+}
+#menuUlAdmin {
+	list-style: none;
+	padding: 0;
+	background-color:#4c4c4e;
+}
+#menuUlAdmin li {
+	float: left;
+}
+.menu_nav a:hover{
+	color:#4c4c4e;
+	background-color:#ffffff;
+}
+.menu_nav:hover {
+    color: #4c4c4e;
+	background-color:#ffffff;
+}
+#menuUl {
+	list-style: none;
+	padding: 0;
+	background-color:#4c4c4e;
+}
+#menuUl li {
+	float: left;
+}
+#recherche {
+    color: #4c4c4e;
+	font-weight:bold;
+}
+.imagePersonne{
+	float:left;
+	border:1px solid gray;
+}
+.menuVideo{
+	float:right;
+}
+.arretFloat{
+	clear:both;
+}
+.invisible{
+	visibility:hidden;
+}
+.table100{
+	width:100%;
+}
+.table80{
+	width:80%;
+	margin:auto;
+}
+.t3{
+	width:3%;
+	border-bottom:2px solid gray;
+}
+.t21{
+	width:21%;
+	border-bottom:2px solid gray;
+}
+.t20{
+	width:20%;
+	border-bottom:2px solid gray;
+}
+.t25{
+	width:25%;
+	border-bottom:2px solid gray;
+}
+.t55{
+	width:55%;
+	border-bottom:2px solid gray;
+}
+.fondBlanc{
+	background-color:white;
+}

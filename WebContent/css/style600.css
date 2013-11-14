@@ -1,0 +1,260 @@
+.ariane {
+	background-color: transparent;
+    color: #c3c3c3;
+	font-weight:bold;
+    font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+    font-size: 9px;
+	text-transform:uppercase;
+	font-style:italic;
+	height:20px;
+	line-height:20px;
+}
+
+.ariane:hover{
+    color: white;
+	background-color:#4c4c4e;
+}
+.menu_nav {
+	font-size: 7px;
+    font-weight: bold;
+    color:#ffffff;
+	height:20px;
+	line-height:20px;
+	text-align:center;
+	text-transform:uppercase;
+}
+.menu_nav:hover {
+    color: #4c4c4e;
+	background-color:#ffffff;
+}
+.menu_nav a{
+	text-decoration: none;
+	color:#ffffff;
+	background-color:#4c4c4e; 
+	display:block;
+	height: 20px; 
+}
+.menu_nav a:hover{
+	color:#4c4c4e;
+	background-color:#ffffff;
+}
+#menu{
+	margin:auto;
+	width:500px;
+	height:20px;
+}
+#menu_accueil{
+	width:35px;
+}
+#menu_cinema{
+	width:35px;
+}
+#menu_series{
+	width:35px;
+}
+#menu_divertissement{
+	width:90px;
+}
+#menu_kids{
+	width:35px;
+}
+#menu_manga{
+	width:35px;
+}
+#menu_monCompte{
+	width:72px;
+}
+#menu_mesVideos{
+	width:72px;
+}
+#menu_inscription{
+	width:72px;
+}
+#menu_deconnexion{
+	width:10px;
+}
+#menuUl {
+	list-style: none;
+	padding: 0;
+	background-color:#4c4c4e;
+
+}
+#menuUl li.menu_separator {
+	width: 1px; 
+	height: 20px; 
+	background-image: url(../images/sep.gif);
+}
+#menuUl li.menu_blank {
+	width: 20px; 
+	height: 20px; 
+	background-color:transparent;
+}
+.deconnect{
+	width:10px;
+	margin-top:6px;
+}
+#menuUl li {
+	float: left;
+}
+
+#rechercher {
+	width: 20px;
+}
+#recherche {
+    color: #4c4c4e;
+	font-weight:bold;
+    font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+    font-size: 9px;
+}
+.titre{
+	background-color:#ffffff;
+    color: #c3c3c3;
+	font-weight:bold;
+    font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+    font-size: 10px;
+	text-transform:uppercase;
+	height:20px;
+	line-height:20px;
+}
+.corps{
+	background-color:#ffffff;
+    color: #black;
+	font-weight:bold;
+    font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+    font-size: 8px;
+}
+#rechFilm{
+	background-color:#4c4c4e;
+    color: #ffffff;
+	font-weight:bold;
+    font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+    font-size: 10px;
+	text-transform:uppercase;
+	height:20px;
+	line-height:20px;
+}
+#rechFilm select{
+	text-transform:none;
+    font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+    font-size: 9px;
+	width:120px;
+}
+#blogvision{
+	background-color:lightGray;
+	border:none;
+	text-align:center;
+ 
+}
+#ba{
+	width:360px; 
+	height:202px
+}
+.titreVideo{
+    color: #4c4c4e;
+	background-color:#ffffff;
+	font-weight:bold;
+    font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+    font-size: 11px;
+	line-height:10px;
+}
+.libelleVideo{
+    color: #c3c3c3;
+	font-weight:bold;
+    font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+    font-size: 9px;
+}
+.acteurs ul {
+	list-style-type:none;
+}
+.ficheFilm{
+	background-color:lightGray;
+}
+.libelleVideoFiche{
+    color: #4c4c4e;
+	font-weight:bold;
+    font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+    font-size: 9px;
+}
+.connexion {
+	background-color:#c3c3c3;
+	font-size: 12px;
+    font-weight: bold;
+    color:#4c4c4e;
+	height:90px;
+	line-height:40px;
+	text-align:center;
+	text-transform:uppercase;
+}
+.inputCnx{
+    color:#4c4c4e;
+	font-size: 12px;
+}
+.client{
+	width:65%;
+	margin:auto;
+	line-height:20px;
+	vertical-align:middle;
+}
+.nomClient{
+	text-align:right;
+	margin-right:10px;
+    color: #c3c3c3;
+	font-weight:bold;
+    font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+    font-size: 12px;
+}
+.info {
+	background-color:#c3c3c3;
+	font-size: 12px;
+    font-weight: bold;
+    color:#4c4c4e;
+	height:250px;
+	line-height:40px;
+	text-align:left;
+}
+.infoClient{
+	margin-left:20px;
+    color:#4c4c4e;
+	font-size: 12px;
+}
+.imageBig{
+	width:200px;
+}
+.imageParticip{
+	width:60px; 
+}
+.divImageBig{
+	float:left;
+	padding:5px;
+}
+.divRealisateurs{
+	margin-left:20px;
+	background-color:white;
+	height:120px;
+}
+.unRealisateur{
+	float:left;
+	background-color:white;
+	width:70px;
+	padding-left:3px;
+	padding-top:3px;
+}
+.divActeurs{
+	margin-left:5px;
+	background-color:white;
+	height:250px;
+}
+.unActeur{
+	float:left;
+	background-color:white;
+	width:70px;
+	padding-left:3px;
+	padding-top:3px;
+}
+.divSynopsis{
+	margin-left:8px;
+	background-color:white;
+	height:140px;
+	overflow-y:auto;
+	word-wrap: break-word;
+}

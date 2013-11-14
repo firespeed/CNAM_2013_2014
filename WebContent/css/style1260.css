@@ -1,0 +1,387 @@
+#contenu{
+	width:900px;
+	margin:auto;
+	background-color:white;
+}
+.divSynopsis{
+	background-color:white;
+	overflow-y:auto;
+	word-wrap: break-word;
+	margin-left:20px;
+	height:190px;
+}	
+.synopsis{
+	font-size: 11px;
+	margin-left:10px;
+	margin-right:10px;
+}
+.textAreaSynopsis{
+	width:95%;
+	height:150px;
+	padding:5px;
+}
+
+#selectAnnee{
+	width:70px;
+}
+#selectCategorie{
+	width:120px;
+}
+.indexAlpha{
+	text-align:center;
+	line-height:40px;
+	vertical-align:center;
+	background-color:white;
+	font-size: 12px;
+    font-weight: bold;
+    color:#4c4c4e;
+	cursor: pointer;	
+}
+.entreeTexte{
+    font-size: 12px;
+	font-weight:bold;
+	color:#4c4c4e;
+	text-align:left;
+}
+.entreeTexteCenter{
+    font-size: 12px;
+	font-weight:bold;
+	color:#4c4c4e;
+	text-align:center;
+}
+.file{
+    font-size: 12px;
+	font-weight:bold;
+	color:#4c4c4e;
+}
+#fichierParticipant{
+    font-size: 12px;
+	font-weight:bold;
+	color:#4c4c4e;
+	width:100%;
+}
+#fichierVideo{
+    font-size: 12px;
+	font-weight:bold;
+	color:#4c4c4e;
+	width:100%;
+}
+.client{
+	width:65%;
+	margin:auto;
+	line-height:40px;
+	vertical-align:middle;
+}
+.nomClient{
+	text-align:right;
+	margin-right:10px;
+    color: #c3c3c3;
+	font-weight:bold;
+    font-size: 12px;
+}
+
+.divImageBig{
+	float:left;
+	padding:10px;
+}
+.divRealisateurs{
+	margin-left:20px;
+	background-color:white;
+	height:190px;
+}
+.ariane {
+	background-color: transparent;
+    color: #c3c3c3;
+	font-weight:bold;
+	text-transform:uppercase;
+	font-style:italic;
+	line-height:40px;
+}
+#ba{
+	width:640px; 
+	height:360px
+}
+.blocPage{
+	margin-left:10px;
+	margin-right:10px;
+	font-size:12px;
+	background-color:white;
+	padding:20px;
+	height:100%;
+}
+.connexion {
+	background-color:#c3c3c3;
+	font-size: 12px;
+    font-weight: bold;
+    color:#4c4c4e;
+	height:100%;
+	line-height:40px;
+	text-align:center;
+	text-transform:uppercase;
+}
+.corps{
+	background-color:#ffffff;
+    color: #black;
+	font-weight:bold;
+    font-size: 10px;
+}
+.deconnect{
+	width:20px;
+	margin-top:10px;
+}
+.divActeurs{
+	margin-left:20px;
+	background-color:white;
+}
+.info {
+	background-color:#c3c3c3;
+	font-size: 12px;
+    font-weight: bold;
+    color:#4c4c4e;
+	height:100%;
+	line-height:40px;
+	text-align:left;
+}
+.infoClient{
+	margin-left:20px;
+    color:#4c4c4e;
+	font-size: 12px;
+}
+.imageBig{
+	width:360px;
+}
+.imageParticip{
+	width:100px; 
+}
+.imageSmall{
+	width:150px;
+}
+.inputCnx{
+    color:#4c4c4e;
+	font-size: 12px;
+}
+.libelleVideo{
+    color: #c3c3c3;
+	font-weight:bold;
+    font-size: 11px;
+}
+
+.libelleVideoFiche{
+    color: #4c4c4e;
+	font-weight:bold;
+    font-size: 11px;
+}
+#menu{
+	margin:auto;
+	width:900px;
+	height:40px;
+}
+.menu_35{
+	width:35px;
+}
+.menu_75{
+	width:75px;
+}
+
+.menu_136{
+	width:136px;
+}
+.menu_120{
+	width:120px;
+}
+#menuAdmin{
+	margin:auto;
+	width:900px;
+	height:20px;
+}
+#menuUlAdmin li.menu_separator {
+	width: 1px; 
+	height: 20px; 
+	background-image: url(../images/sep.gif);
+}
+#menuUlAdmin li.menu_blank {
+	width: 30px; 
+	height: 20px; 
+	background-color:transparent;
+}
+#menu_deconnexion{
+	width:20px;
+}
+.menu_nav a{
+	text-decoration: none;
+	color:#ffffff;
+	background-color:#4c4c4e; 
+	display:block;
+	height: 40px; 
+}
+.menu_nav {
+    font-weight: bold;
+    color:#ffffff;
+	height:40px;
+	line-height:40px;
+	text-align:center;
+	text-transform:uppercase;
+}
+
+#menuUl li.menu_separator {
+	width: 1px; 
+	height: 40px; 
+	background-image: url(../images/sep.gif);
+}
+#menuUl li.menu_blank {
+	width: 30px; 
+	height: 40px; 
+	background-color:transparent;
+}
+#rechercher {
+	width: 20px;	
+}
+#rechFilm{
+	background-color:#4c4c4e;
+    color: #ffffff;
+	font-weight:bold;
+    font-size: 12px;
+	text-transform:uppercase;
+	height:40px;
+	line-height:40px;
+}
+#rechFilm select{
+	text-transform:none;
+    font-size: 10px;
+}
+.titre{
+	background-color:#ffffff;
+    color: #c3c3c3;
+	font-weight:bold;
+	text-transform:uppercase;
+	height:40px;
+	line-height:40px;
+}
+.titreVideo{
+    color: #4c4c4e;
+	background-color:#ffffff;
+	font-weight:bold;
+    font-size: 14px;
+	line-height:30px;
+}
+.unRealisateur{
+	float:left;
+	background-color:white;
+	width:110px;
+	padding-left:5px;
+	padding-top:5px;
+}
+.ligneAdmin{
+    font-size: 11px;
+	font-weight:bold;
+	color:#4c4c4e;
+}
+.textConsult1{
+    font-size: 14px;
+	font-weight:bold;
+	color:#4c4c4e;
+	text-align:center;
+	line-height:30px;
+	vertical-align:middle;
+	height:auto;
+}
+.textConsult2{
+    font-size: 12px;
+	font-weight:bold;
+	color:#4c4c4e;
+	line-height:20px;
+	vertical-align:middle;
+}
+.textConsultTitre{
+   font-size: 14px;
+	font-weight:bold;
+	background-color:#4c4c4e;
+	line-height:30px;
+	vertical-align:middle;
+    color:#c3c3c3;
+}
+.prev_container{
+    overflow: auto;
+    width: 160px;
+	margin:auto;
+}
+.prev_thumb{
+   height: 213px; 
+   margin:auto;
+}
+.imageActuelle{
+   height: 213px; 
+   width:50%;
+}
+.photoParticip{
+   height: 213px; 
+}
+.photoFilm{
+	border:2px outset gray;
+	float:left;
+	margin-left:10px;
+	text-align:center;
+	padding:5px;
+	
+	width:110px;
+	height:190px;
+}
+.imageFilm{
+	width:100px;
+}
+
+.imageVideo{
+	float:left;
+	border:1px solid gray;	
+	margin-left:10px;
+	margin-right:10px;
+}
+.imageNouveau{
+	width:30px;
+	line-height:40px;
+	vertical-align:middle;
+	float:right;
+}
+.imageRetour{
+	width:30px;
+	float:right;
+}
+.titrePage{
+	margin-left:10px;
+	line-height:40px;
+	vertical-align:middle;
+}
+.unActeur{
+	float:left;
+	background-color:white;
+	width:110px;
+	padding-left:5px;
+	padding-top:5px;
+}
+.cadrePersonne{
+	height:100%;
+	width:60%;
+	border:3px solid gray;
+	margin:auto;
+}
+.cadreVideo{
+	height:100%;
+	width:100%;
+	border:1px solid gray;
+}
+.blocSupprimer{
+	margin-left:10px;
+	margin-right:10px;
+	font-size:12px;
+	background-color:white;
+	padding:20px;
+	height:40px;
+	text-align:center;
+}
+.tableAlpha{
+	width:100%;
+	background-color:lightGray;
+}
+.picto{
+	width:30px;
+}

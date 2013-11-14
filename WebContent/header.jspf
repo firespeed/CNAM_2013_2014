@@ -1,0 +1,301 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="fr">
+<head>
+	<title>VOD: streaming ou t&#233;l&#233;chargement - toutes vos vid&#233;os &#224; la demande</title>
+	<link href="css/commun.css" rel="stylesheet" type="text/css" />
+
+	<link href="css/style1260.css" rel="stylesheet" type="text/css" media="screen and (min-width:1260px)" />
+	<link href="css/style900.css" rel="stylesheet" type="text/css" media="screen and (min-width:900px) and (max-width:1259px)" />
+	<link href="css/style600.css" rel="stylesheet" type="text/css" media="screen and (max-width:899px)" />
+
+	<script type="text/javascript" src="js/jquery-1.10.2.js" ></script>
+	<script type="text/javascript" src="js/jquery.preimage.js" ></script>
+	<script type="text/javascript" src="js/jquery.backgroundpos.js" ></script>
+	<script type="text/javascript" src="js/jquery.maskedinput.js"></script>
+	<script type="text/javascript" src="js/vegas/jquery.vegas.js"></script>	
+
+
+ 	<link rel="stylesheet" type="text/css" href="js/vegas/jquery.vegas.css" />
+
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+		
+		// Masque de saisie des dates
+		$(".date").mask("99/99/9999");
+		
+
+		var largeur = $(window).width();
+		var hauteur = $(window).height();
+
+		var largeurVideo = 900;
+		var hauteurVideo = Math.round(largeurVideo/2.6);
+
+		if(largeur >= 1260){
+			var largeurVideo = 900;
+		}else{
+			var largeurVideo = 700;
+		}
+		
+		$( window ).resize(function() {
+			largeur = $(window).width();
+			hauteur = $(window).height();
+
+			if(largeur >= 1260){
+				var largeurVideo = 900;
+			}else{
+				var largeurVideo = 700;
+			}
+			
+//			largeurVideo = Math.round(largeur/1.7);
+//			hauteurVideo = Math.round(largeurVideo/2.6);
+
+
+			$('#recherche').val(largeur+" x "+hauteur);
+
+		});
+		var hauteurVideo = Math.round(largeurVideo/2.6);
+		// Taille video de presentation	
+		$('#flashHome').attr("width", largeurVideo);
+		$('#flashHome').attr("height", hauteurVideo);
+		$('#flashHome2').attr("width", largeurVideo);
+		$('#flashHome2').attr("height", hauteurVideo);
+		
+
+		
+/*
+		    $.vegas('slideshow', {
+				backgrounds:[
+					{ src:'js/vegas/images/film_fond0.jpg', fade:2000 },
+					{ src:'js/vegas/images/film_fond1.jpg', fade:2000 },
+					{ src:'js/vegas/images/film_fond2.jpg', fade:2000 },
+					{ src:'js/vegas/images/film_fond3.jpg', fade:2000 },
+					{ src:'js/vegas/images/film_fond4.jpg', fade:2000 },
+					{ src:'js/vegas/images/film_fond5.jpg', fade:2000 }
+					]
+			})('overlay', {
+				src:'js/vegas/overlays/00.png'
+			});
+*/			
+		    $('body').bind('vegasload',
+				function(e, bg) {
+					var img = $(bg).attr('src');
+					$(this).attr("background-size", "cover");
+				}
+			);
+		
+		$(".indexAlpha").click(function(){
+			// Recuperation du choix
+			var valeur = $(this).text();
+
+			if(valeur == 'Tous') 
+			{
+				$('.ligneAdmin').show();
+			}else{
+				// On rend tout invisible
+				$('.ligneAdmin').hide();
+				// On affiche seulement les noms pour la lettre selectionnee
+				$('.'+valeur).show();
+			}
+		});
+		
+		$('.file').preimage();
+		
+		
+	});
+	</script> 
+	
+</head>
+<body>
+		
+		<div class="client">
+			<div style="float:left;">
+				<input type="text" name="txtSearch" size="20" value="Rechercher" id="recherche" style="height:18px;" />
+			</div>
+			<div>
+				<a href="" title="Rechercher">
+					<img src="images/loupe.jpg" alt="Rechercher" title="Rechercher" />
+				</a>
+			</div>
+		</div>
+		<div class="client">
+			<div class="nomClient">
+				<?php 			
+					if(isset($_SESSION["user"]))
+					{
+						echo $_SESSION["user"]["prenom"]." ".$_SESSION["user"]["nom"];
+					}else{
+						echo "&nbsp;";					
+					}
+				?>
+			</div>
+		</div>
+		
+		<div id="menu">
+			<ul id="menuUl">
+						<li class="menu_nav menu_75">
+							<a href="index" title="Accueil ">
+								Accueil
+							</a>							
+						</li>
+						
+						<li class="menu_separator"></li>
+						
+						<li class="menu_nav menu_75">
+							<a href="cinema" title="Cinema">
+								Cin&eacute;ma
+							</a>
+						</li>
+						
+						<li class="menu_separator"></li>
+						
+						<li class="menu_nav menu_75">
+							<a href="series" title="S&eacute;ries">
+								S&eacute;ries
+							</a>
+						</li>
+						
+						<li class="menu_separator"></li>
+						
+						<li class="menu_nav menu_136">
+							<a href="divertissement" title="Divertissement">
+								Divertissement
+							</a>
+						</li>
+						
+						<li class="menu_separator"></li>
+						
+						<li class="menu_nav menu_75">
+							<a href="kids" title="Kids">
+								Kids
+							</a>
+						</li>
+						
+						<li class="menu_separator"></li>
+						
+						<li class="menu_nav menu_75">
+							<a href="manga" title="Manga">
+								Manga
+							</a>
+						</li>
+
+						<li class="menu_separator"></li>
+						
+						<li class="menu_nav menu_120">
+							<a href="monCompte" title="Mon Compte">
+								Mon compte
+							</a>
+						</li>
+						
+						<li class="menu_separator"></li>
+						
+						<li class="menu_nav menu_120">
+							<a href="mesVideos" title="Mes Vid&eacute;os">
+								Mes videos
+							</a>
+						</li>
+
+						<li class="menu_separator"></li>
+
+						<li class="menu_nav menu_120">
+							<a href="inscription" title="Mon Compte">
+								S'inscrire
+							</a>
+						</li>
+
+						<li class="menu_separator"></li>
+
+						<li class="menu_nav" id="deconnexion">
+							<a href="deconnexion"  title="Se deconnecter">
+								<img src="images/picto-deconnect.png" title="Se deconnecter" class="deconnect"/>
+							</a>
+						</li>
+						
+					</ul>
+		</div>
+
+	
+	<div id="separation" style="margin:auto;height:10px;"></div>
+	
+	<div id="menu">
+		<ul id="menuUl">
+			<li class="menu_nav menu_75">
+				<a href="adminVideo" title="Gestion des Vid&eacute;os">
+					Vid&eacute;os
+				</a>							
+			</li>
+						
+			<li class="menu_separator"></li>
+				
+			<li class="menu_nav menu_120">
+				<a href="adminParticipant" title="Gestion des participants">
+					Participants
+				</a>
+			</li>
+						
+			<li class="menu_separator"></li>
+						
+			<li class="menu_nav menu_120">
+				<a href="adminCategorie" title="Gestion des categories">
+					Cat&eacute;gories
+				</a>
+			</li>
+						
+			<li class="menu_separator"></li>
+						
+			<li class="menu_nav menu_75">
+				<a href="adminFormat" title="Gestion des formats">
+					Formats
+				</a>
+			</li>
+						
+			<li class="menu_separator"></li>
+						
+			<li class="menu_nav menu_75">
+				<a href="adminClient" title="Gestion des clients">
+					Clients
+				</a>
+			</li>
+						
+			<li class="menu_separator menu_120"></li>
+						
+			<li id="menu_manga" class="menu_nav menu_120">
+				<a href="adminAbonnement" title="Gestion des abonnements">
+					Abonnements
+				</a>
+			</li>
+
+			<li class="menu_separator"></li>
+						
+			<li class="menu_nav menu_75">
+				<a href="adminVille" title="Gestion des villes">
+					Villes
+				</a>
+			</li>
+						
+			<li class="menu_separator"></li>
+					
+			<li class="menu_nav menu_75" >
+				<a href="adminPays" title="Gestion des pays">
+					Pays
+				</a>
+			</li>
+
+			<li class="menu_separator"></li>
+
+			<li class="menu_nav menu_120" >
+				<a href="adminDepartement" title="Gestion des d&eacute;partements">
+					D&eacute;partements
+				</a>
+			</li>
+			
+			<li class="menu_separator"></li>
+			
+			<li class="menu_nav menu_35" >
+				<a href="#" title="Aide en ligne">
+					?
+				</a>
+			</li>
+			</ul>
+	</div>
