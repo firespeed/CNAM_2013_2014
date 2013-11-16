@@ -19,13 +19,6 @@
     </taglib>
   </jsp-config>
   <servlet>
-    <servlet-name>ListCinema</servlet-name>
-  </servlet>
-  <servlet-mapping>
-    <servlet-name>ListCinema</servlet-name>
-    <url-pattern>/cinema</url-pattern>
-  </servlet-mapping>
-  <servlet>
     <servlet-name>cinemaview</servlet-name>
     <jsp-file>/pages/cinema.jsp</jsp-file>
   </servlet>

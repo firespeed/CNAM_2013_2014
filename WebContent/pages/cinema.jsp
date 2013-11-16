@@ -18,7 +18,7 @@
 
 				<div style="height: 220px; margin-top: 25px;">
 		<div style="margin-left: 10px; float: left; width: 180px;">
-			<a href="film?id=1"> <img
+			<a href="DetailFilm?id=<c:out value="${video.id}" />"> <img
 				src="imagesvideos/<c:out value="${video.image}" />" class="imageSmall" />
 			</a>
 		</div>

@@ -7,12 +7,13 @@
 <%@ include file="../header.jspf"%>
 
 <div class="ariane">Accueil &gt; cinema</div>
+<c:forEach var="video" begin="0" items="${requestScope['arrVideo']}">
 <div class="titreVideo">Avatar</div>
 <hr />
 
 <div>
 	<div class="divImageBig">
-		<img src="imagesvideos/avatar.jpg" class="imageBig" />
+		<img src="imagesvideos/<c:out value="${video.image}" />" class="imageBig" />
 	</div>
 
 	<div class="ficheFilm">
@@ -65,18 +66,7 @@
 			<span class="libelleVideoFiche">Synopsis :</span>
 			<hr />
 			<div class="synopsis">
-				<p>Malgré sa paralysie, Jake Sully, un ancien marine immobilisé
-					dans un fauteuil roulant, est resté un combattant au plus profond
-					de son être. Il est recruté pour se rendre à des années-lumière de
-					la Terre, sur Pandora, où de puissants groupes industriels
-					exploitent un minerai rarissime destiné à résoudre la crise
-					énergétique sur Terre. Parce que l'atmosphère de Pandora est
-					toxique pour les humains, ceux-ci ont créé le Programme Avatar, qui
-					permet à des " pilotes " humains de lier leur esprit à un avatar,
-					un corps biologique commandé à distance, capable de survivre dans
-					cette atmosphère létale. Ces avatars sont des hybrides créés
-					génétiquement en croisant l'ADN humain avec celui des Na'vi, les
-					autochtones de Pandora.</p>
+				<p><c:out value="${video.synopsys}" /></p>
 			</div>
 		</div>
 
@@ -96,6 +86,8 @@
 		src='http://www.allocine.fr/_video/iblogvision.aspx?cmedia=19135625'>
 	</iframe>
 </div>
+</c:forEach>
+
 
 
 
